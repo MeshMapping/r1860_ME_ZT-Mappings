@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2024-07-23T18:19:32.638Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="M0VMAlqYI1Woov3SFC72" version="24.7.1" type="device">
+  <diagram name="Page-1" id="llaCwsJbwQGVnoqfy9CV">
+    <mxGraphModel dx="1584" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n84rLuiJboxY6W36FprT-1" value="sa_mesh_run_within_tile" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="343" y="20" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n84rLuiJboxY6W36FprT-2" target="n84rLuiJboxY6W36FprT-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-2" value="run_within_tile_init" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-7" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="155" y="180" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-3" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;" parent="n84rLuiJboxY6W36FprT-7" vertex="1">
+          <mxGeometry width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-6" value="&lt;div&gt;Call processes:&lt;/div&gt;&lt;div&gt;irrigation_init&lt;/div&gt;&lt;div&gt;mountain_init&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp;RUNCLASS36_init&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; runsvs_mesh_ini&lt;/div&gt;&lt;div&gt;bflm_init&lt;/div&gt;&lt;div&gt;&amp;nbsp; runci_init&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="n84rLuiJboxY6W36FprT-7" vertex="1">
+          <mxGeometry x="15" y="10" width="125" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n84rLuiJboxY6W36FprT-12" target="n84rLuiJboxY6W36FprT-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-12" value="Allocate memory in&amp;nbsp;&lt;b&gt;model_variables_to_head&lt;/b&gt; based on number of active variables" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="148.13" y="340" width="168.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="n84rLuiJboxY6W36FprT-6" target="n84rLuiJboxY6W36FprT-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-17" value="Allocate&amp;nbsp;&lt;b&gt;model_variables_to_node&lt;/b&gt; if irrigation process active" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="133.24" y="450" width="198.53" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n84rLuiJboxY6W36FprT-19" target="n84rLuiJboxY6W36FprT-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-19" value="run_within_tile" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n84rLuiJboxY6W36FprT-20" target="n84rLuiJboxY6W36FprT-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-20" value="Call Processes:&lt;div&gt;irrigation_within_tile&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;mountain_within_tile&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call RUNCLASS36_within_tile&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call runsvs_mesh_within_tile&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call bflm_within_tile&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call runci_within_tile&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="475" y="210" width="210" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n84rLuiJboxY6W36FprT-22" target="n84rLuiJboxY6W36FprT-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-22" value="run_within_tile_stas_update:&lt;div&gt;updates variables&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="370" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-24" value="irrigation_write_output:&lt;div&gt;Output&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="450" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n84rLuiJboxY6W36FprT-26" target="n84rLuiJboxY6W36FprT-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-26" value="run_within_tile_finalize" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="175" y="700" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n84rLuiJboxY6W36FprT-27" value="Call processes:&lt;div&gt;&lt;div&gt;RUNCLASS36_finalize&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; bflm_finalize&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; runsvs_mesh_finalize&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="136.5" y="790" width="206.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1o-a0319OkapsV6aXgHL-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1o-a0319OkapsV6aXgHL-1" target="1o-a0319OkapsV6aXgHL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1o-a0319OkapsV6aXgHL-1" value="run_within_tile_stas_update" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="488.75" y="700" width="165" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1o-a0319OkapsV6aXgHL-2" value="Updates tile variables &quot;vs%tile%*:&lt;div&gt;lqwssno,&amp;nbsp;tsno, albt,&amp;nbsp;zpnd,&amp;nbsp;dzsolhyd,&amp;nbsp;fzwssol,&amp;nbsp;rchg,&amp;nbsp;lkg,&amp;nbsp;rff&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="457.5" y="830" width="227.5" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

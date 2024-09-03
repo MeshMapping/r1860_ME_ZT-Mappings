@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" modified="2024-07-23T18:22:30.086Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="X1u1db8wWEIZrOMJO3s3" version="24.7.1" type="device">
+  <diagram name="Page-1" id="S4Qsapw57uPhdEScr6_6">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3MBttBxStycFvoHLmayV-1" value="sa_mesh_run_within_grid" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="343" y="30" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3MBttBxStycFvoHLmayV-3" target="3MBttBxStycFvoHLmayV-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-3" value="run_within_grid_init" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-4" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="134.63" y="210" width="208.37" height="485" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-5" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&amp;nbsp; run_within_grid_stas_update&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;" parent="3MBttBxStycFvoHLmayV-4" vertex="1">
+          <mxGeometry x="10" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="3MBttBxStycFvoHLmayV-4" source="3MBttBxStycFvoHLmayV-19" target="3MBttBxStycFvoHLmayV-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-19" value="run_within_grid_stas_update" style="rounded=1;whiteSpace=wrap;html=1;" parent="3MBttBxStycFvoHLmayV-4" vertex="1">
+          <mxGeometry x="5.240000000000009" y="100" width="179.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="3MBttBxStycFvoHLmayV-4" source="3MBttBxStycFvoHLmayV-20" target="3MBttBxStycFvoHLmayV-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-20" value="Initializes grid variables to 0.0" style="whiteSpace=wrap;html=1;rounded=1;" parent="3MBttBxStycFvoHLmayV-4" vertex="1">
+          <mxGeometry x="-0.009999999999990905" y="190" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="3MBttBxStycFvoHLmayV-4" source="3MBttBxStycFvoHLmayV-26" target="3MBttBxStycFvoHLmayV-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-26" value="Updates the grid variable by adding the product of the tile variable value and a fraction derived from ACLASS variable" style="whiteSpace=wrap;html=1;rounded=1;" parent="3MBttBxStycFvoHLmayV-4" vertex="1">
+          <mxGeometry x="3.680000000000007" y="270" width="182.62" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-28" value="Variables&amp;nbsp;cmas, tcan, gro, tsno, rhosno, tpnd, tice are normalized by fractional coverage arrays" style="whiteSpace=wrap;html=1;rounded=1;" parent="3MBttBxStycFvoHLmayV-4" vertex="1">
+          <mxGeometry x="-18.379999999999995" y="390" width="226.75" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3MBttBxStycFvoHLmayV-12" target="3MBttBxStycFvoHLmayV-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-12" value="run_within_grid" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3MBttBxStycFvoHLmayV-21" target="3MBttBxStycFvoHLmayV-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-21" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&amp;nbsp; run_within_grid_stas_update&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="495" y="220" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3MBttBxStycFvoHLmayV-22" target="3MBttBxStycFvoHLmayV-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-22" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Call process:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;bflm_within_grid&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3MBttBxStycFvoHLmayV-24" value="Updates Grid variables:&lt;div&gt;rff, ovrflw, latflw, lkg&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="485" y="380" width="190" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
