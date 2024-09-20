@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.14">
+  <diagram name="Page-1" id="zaTo76ql84y3UghPxRbT">
+    <mxGraphModel dx="1666" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-1" value="output_variables.f90" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;" vertex="1" parent="1">
+          <mxGeometry x="400" width="185" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-3" target="iFBtCjeKtGKrNoikVeEH-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-3" value="&lt;b&gt;output_variables_init(shd)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-4" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="iFBtCjeKtGKrNoikVeEH-4">
+          <mxGeometry width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-6" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Driver\MESH_Driver\output_variables.f90: output_variables_series_init&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Driver\MESH_Driver\output_variables.f90: output_variables_group_associate_ts&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\output_variables.f90: output_variables_activate_vnames&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\output_variables.f90: output_variables_activate_pntr&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\output_variables.f90: output_variables_allocate&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iFBtCjeKtGKrNoikVeEH-4">
+          <mxGeometry x="8.768500000000003" width="361.7315" height="126.48648648648648" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-8" target="iFBtCjeKtGKrNoikVeEH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-8" value="Initialize shd variable&lt;div&gt;type(ShedGridParams), intent(in) :: shd&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="92.5" y="240" width="215" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-10" target="iFBtCjeKtGKrNoikVeEH-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-10" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;!&amp;gt; Initialize &#39;ts&#39; values&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;call output_variables_series_init(shd, out%ts)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="71.25" y="330" width="257.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-12" target="iFBtCjeKtGKrNoikVeEH-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-12" value="&lt;div&gt;!&amp;gt; Run the following for each Total, yearly, monthly, daily and hourly values:&lt;/div&gt;&lt;div&gt;call output_variables_series_init(shd, out%tot)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call output_variables_group_associate_ts(out%tot)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="45" y="420" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-13" value="end subroutine" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-15" target="iFBtCjeKtGKrNoikVeEH-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-15" value="&lt;b&gt;inteface output_variables_activate&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-16" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-20" target="iFBtCjeKtGKrNoikVeEH-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-17" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iFBtCjeKtGKrNoikVeEH-16">
+          <mxGeometry x="-0.175" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-20" target="iFBtCjeKtGKrNoikVeEH-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-19" value="4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iFBtCjeKtGKrNoikVeEH-18">
+          <mxGeometry x="0.0722" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-20" value="Number of arguments passed" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="562.5" y="240" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-22" target="iFBtCjeKtGKrNoikVeEH-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-22" value="call output_variables_activate_vnames" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="410" y="300" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-23" value="call output_variables_activate_pntr" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="630" y="300" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-24" value="end interface" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="380" width="97.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-27" target="iFBtCjeKtGKrNoikVeEH-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-27" value="&lt;b&gt;output_variables_activate_vnames (fields, vnames)&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="111.25" y="620" width="217.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-28" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="95" y="700" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="iFBtCjeKtGKrNoikVeEH-28">
+          <mxGeometry width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-30" value="&lt;b&gt;call output_variables_activate_pntr (fields, vnames(i))&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="iFBtCjeKtGKrNoikVeEH-28">
+          <mxGeometry x="23.75" y="30" width="205" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-31" value="do i = 1, size(vnames)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iFBtCjeKtGKrNoikVeEH-28">
+          <mxGeometry x="6.25" y="4" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-32" value="end subroutine" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="169.38" y="820" width="101.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-33" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-29" target="iFBtCjeKtGKrNoikVeEH-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="221" y="800" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-35" target="iFBtCjeKtGKrNoikVeEH-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="628.75" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-35" value="&lt;b&gt;output_variables_activate_pntr (fields, vname, pntr, ig)&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="520" y="490" width="217.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-36" value="end subroutine" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="580" y="750" width="101.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-39" target="iFBtCjeKtGKrNoikVeEH-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-39" value="Allocate output variable &lt;b&gt;vname &lt;/b&gt;(can be found in variable_namesf90)&amp;nbsp;and other associated variables&amp;nbsp;to&lt;b&gt;&amp;nbsp;fields &lt;/b&gt;array and associate it to &lt;b&gt;pntr.&lt;/b&gt;&lt;br&gt;&lt;b&gt;&amp;nbsp;e.g call output_variables_allocate(fields%fsin, n1, pntr)&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="490" y="570" width="277.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iFBtCjeKtGKrNoikVeEH-42" target="iFBtCjeKtGKrNoikVeEH-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFBtCjeKtGKrNoikVeEH-42" value="Recurse on certain vname e.g.&amp;nbsp;&amp;nbsp;&lt;b&gt;VN_STGW, etc.&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="543.44" y="690" width="174.37" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

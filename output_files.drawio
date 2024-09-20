@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.14">
+  <diagram id="5De6K9ASDUfEWSelmguN" name="Page-1">
+    <mxGraphModel dx="1666" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-1" value="output_files.f90" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;" vertex="1" parent="1">
+          <mxGeometry x="410" y="10" width="185" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="10" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="d9b_-3qSG7pwI8KvC-zc-2">
+          <mxGeometry width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-4" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Driver\MESH_Driver\output_files.f90: output_files_append_field&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Driver\MESH_Driver\output_files.f90: output_files_parse_indices&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\permafrost_outputs\permafrost_outputs_module.f90: permafrost_outputs_init&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="d9b_-3qSG7pwI8KvC-zc-2">
+          <mxGeometry x="8.307000000000002" width="342.693" height="97.2972972972973" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-6" target="d9b_-3qSG7pwI8KvC-zc-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-6" value="&lt;b&gt;output_files_init(fls,shd)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-8" target="d9b_-3qSG7pwI8KvC-zc-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-8" value="&lt;div&gt;Initialize variables&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="136.25" y="230" width="127.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-9" value="end subroutine" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="142.5" y="980" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-11" target="d9b_-3qSG7pwI8KvC-zc-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-11" value="&lt;div&gt;fls_out%PROCESS_ACTIVE == True&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="75" y="290" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-13" target="d9b_-3qSG7pwI8KvC-zc-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-13" value="&lt;div&gt;call GET_DATES(ts)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="136.88" y="370" width="126.87" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-15" target="d9b_-3qSG7pwI8KvC-zc-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-15" value="Allocate output variable for time-stamps" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="125.08" y="440" width="149.84" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-16" value="Open input file and reads file:&amp;nbsp;outputs_balance.txt" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#C3ABD0;" vertex="1" parent="1">
+          <mxGeometry x="116.36999999999999" y="520" width="167.26" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-18" target="d9b_-3qSG7pwI8KvC-zc-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="600" width="275" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-19" value="Parse each line and get arguments from file" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="131.17" y="670" width="164.92" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-20" value="Compare arguments with Model variables and call with appropriate arguments:&lt;br&gt;call &lt;b&gt;output_files_append_field&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;If&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;case (PMFRSTVN_DZAA):&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;call &lt;b&gt;output_files_parse_indices&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;call &lt;b&gt;permafrost_outputs_init&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="106.16999999999999" y="720" width="218.83" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.473;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-16" target="d9b_-3qSG7pwI8KvC-zc-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-22" value="do while (ios == 0)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="607" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-23" value="i = i + read_txt_line(iun, line, ios)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="133.11999999999998" y="627" width="164.92" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d9b_-3qSG7pwI8KvC-zc-25" target="d9b_-3qSG7pwI8KvC-zc-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d9b_-3qSG7pwI8KvC-zc-25" value="Print the number of active fields (Output variables)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="135.3" y="900" width="154.41" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.16">
+  <diagram name="Page-1" id="w0_MHzU5yhoLpYj83sCf">
+    <mxGraphModel dx="1666" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7gThX5ocX3hGy7QP_jje-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-34" target="7gThX5ocX3hGy7QP_jje-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-34" value="run_save_basin_output_init(fls, shd)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="262.5" y="130" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-35" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font size=&quot;1&quot;&gt;Driver\MESH_Driver\save_basin_output.f90: parse_basin_output_flag&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Driver\MESH_Driver\output_variables.f90: output_variables_activate&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-37" target="7gThX5ocX3hGy7QP_jje-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-37" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Is head node&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="275.69" y="200" width="221.81" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-39" target="7gThX5ocX3hGy7QP_jje-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="382.5" y="340" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-39" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;!&amp;gt; Parse output file flags.&lt;/span&gt;&lt;div&gt;call parse_basin_output_flag &lt;span style=&quot;font-weight: normal;&quot;&gt;x 4&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#CCFFCC;" parent="1" vertex="1">
+          <mxGeometry x="276.01" y="280" width="225.99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-40" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="180" y="350" width="415" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-41" value="&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" parent="7gThX5ocX3hGy7QP_jje-40" vertex="1">
+          <mxGeometry width="415" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-42" value="&lt;div&gt;Create output files for basin info for Daily, Monthly, Hourly, per time step values:&lt;/div&gt;&lt;div&gt;Water balance:&lt;/div&gt;&lt;div&gt;- Open Basin_average_water_balance.csv&lt;/div&gt;&lt;div&gt;- call allocate_water_balance_out(shd, out%d)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- call write_water_balance_header&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Open Basin_average_water_balance_Gauge*.csv&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Energy balance:&lt;/div&gt;&lt;div&gt;- call allocate_energy_balance_out&lt;/div&gt;&lt;div&gt;- Open Basin_average_energy_balance.csv&lt;br&gt;&lt;/div&gt;&lt;div&gt;- call write_energy_balance_header&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Evaporation:&lt;/div&gt;&lt;div&gt;- call allocate_evp_out&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Open Basin_average_evap.csv&lt;br&gt;&lt;/div&gt;&lt;div&gt;- call update_evp_header&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="7gThX5ocX3hGy7QP_jje-40" vertex="1">
+          <mxGeometry x="43" y="30" width="337" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-43" value="Open&amp;nbsp;basin_SCA_alldays.csv&lt;div&gt;Open&amp;nbsp;basin_SWE_alldays.csv&lt;br&gt;call output_variables_activate(out%d%basin,..)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="512.5" y="643.75" width="260" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-46" target="7gThX5ocX3hGy7QP_jje-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-45" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7gThX5ocX3hGy7QP_jje-46" target="7gThX5ocX3hGy7QP_jje-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-46" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;if (btest(bnoflg%swe%t, 0))&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="269.12" y="660" width="221.81" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-47" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-41" target="7gThX5ocX3hGy7QP_jje-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7gThX5ocX3hGy7QP_jje-49" target="7gThX5ocX3hGy7QP_jje-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-49" value="&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Allocate memory for file descriptors to store streamflow (&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;WF_RTE_fstflout)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: 400; background-color: initial;&quot;&gt;and reach (&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;WF_RTE_frsvrout)&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;&amp;nbsp;output data&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="288.69" y="750" width="199.43" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7gThX5ocX3hGy7QP_jje-51" target="7gThX5ocX3hGy7QP_jje-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-51" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Filenames and unit numbers are assigned for streamflow (&lt;/span&gt;MESH_output_streamflow.csv and MESH_output_streamflow_ts.csv&lt;span style=&quot;font-weight: normal;&quot;&gt;) and reach data (&lt;/span&gt;MESH_output_reach.csv and MESH_output_reach_ts.csv&lt;span style=&quot;font-weight: normal;&quot;&gt;)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="263.35" y="850" width="250.12" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7gThX5ocX3hGy7QP_jje-53" target="7gThX5ocX3hGy7QP_jje-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-53" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Parses the&lt;/span&gt; REACHOUTFLAG &lt;span style=&quot;font-weight: normal;&quot;&gt;and adjusts output frequency for reaches output&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="291.36" y="980" width="194.09" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-55" target="7gThX5ocX3hGy7QP_jje-57" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-55" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;- Open output files for reaches&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;- Open output File for Lake Levels&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="285.88" y="1090" width="205.05" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7gThX5ocX3hGy7QP_jje-57" target="7gThX5ocX3hGy7QP_jje-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-57" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Parses the&lt;/span&gt; STREAMFLOWOUTFLAG&amp;nbsp;&lt;span style=&quot;font-weight: normal;&quot;&gt;and adjusts output frequency for reaches output&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="291.36" y="1200" width="194.09" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7gThX5ocX3hGy7QP_jje-59" target="7gThX5ocX3hGy7QP_jje-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-59" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Open output files for streamflow&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="295.5" y="1310" width="187" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7gThX5ocX3hGy7QP_jje-61" target="7gThX5ocX3hGy7QP_jje-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-61" value="&lt;div&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;!&amp;gt; Allocate output variables&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;call call output_variables_activate&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="303.87" y="1390" width="170.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7gThX5ocX3hGy7QP_jje-62" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="329.005" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LWRBe7WjJOf0WJ5UGsGh-1" value="save_basin_output.f90" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="365.5" y="30" width="147" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

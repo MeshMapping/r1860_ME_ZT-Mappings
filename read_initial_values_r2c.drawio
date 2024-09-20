@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.16">
+  <diagram name="Page-1" id="nOFM1oIAXPmu6_QhDGT9">
+    <mxGraphModel dx="877" dy="394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="otaNcxHZhdEC-y1iKJni-1" value="read_initial_values_r2c.f90" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="363" y="20" width="157" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: open_ensim_input&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: parse_header_ensim&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: validate_header_spatial&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: parse_header_attribute_ensim&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: advance_past_header&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: load_data_r2c&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Modules\io_modules\ensim_io.f90: r2c_to_rank&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-4" target="otaNcxHZhdEC-y1iKJni-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-4" value="read_initial_values_r2c(shd, iun, fname, ierr)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="311.49" y="100" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-6" target="otaNcxHZhdEC-y1iKJni-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-6" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Variables declaration and initialization&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="347.24" y="150" width="188.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-8" target="otaNcxHZhdEC-y1iKJni-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-8" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;gt;!&amp;nbsp; Reads fname&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;call open_ensim_input&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;call parse_header_ensim&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="359.83" y="210" width="162.37" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-10" target="otaNcxHZhdEC-y1iKJni-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-10" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call validate_header_spatial&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="357.23" y="310" width="167.76" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-12" target="otaNcxHZhdEC-y1iKJni-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-12" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call parse_header_attribute_ensim&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="337.25" y="380" width="208.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-14" target="otaNcxHZhdEC-y1iKJni-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-14" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call advance_past_header&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="362.24" y="450" width="157.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-16" target="otaNcxHZhdEC-y1iKJni-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-16" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call load_data_r2c&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="367.06" y="520" width="148.88" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-18" target="otaNcxHZhdEC-y1iKJni-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-18" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Print number of active variables&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="366.67" y="980" width="153.32" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-26" target="otaNcxHZhdEC-y1iKJni-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="458.69999999999993" y="1040" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-20" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="386.77" y="1040" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="otaNcxHZhdEC-y1iKJni-22" target="otaNcxHZhdEC-y1iKJni-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="444" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-22" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;allocate(ffield(shd%NA))&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="358.86" y="590" width="163.34" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-23" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="265.53" y="660" width="350" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.481;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="otaNcxHZhdEC-y1iKJni-23" target="otaNcxHZhdEC-y1iKJni-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="172.4100000000001" y="9.674461879068335" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-25" value="" style="group" vertex="1" connectable="0" parent="otaNcxHZhdEC-y1iKJni-23">
+          <mxGeometry y="29.029497753797116" width="349.99999999999994" height="270.9705022462029" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry y="-37.375241689131435" width="349.99999999999994" height="308.3457439353344" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-27" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Reads&amp;nbsp;tfield = lowercase(vattr(l)%attr)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="59.99999999999999" y="0.003460670526774183" width="221.84999999999997" height="23.24324752600763" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-28" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;call r2c_to_rank&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#CCFFCC;rounded=1;fontStyle=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="100.88999999999999" y="37.37212708565735" width="119.10999999999999" height="30.10783358291144" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="12.959999999999999" y="74.75048337826287" width="324.06999999999994" height="175.45807210962752" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-30" value="Determine the variable" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="115.94" y="87.09432436112868" width="129.06999999999996" height="18.687620844565718" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-31" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;if tfield == TBAR or VN_TSOL or VN_THICSOL or VN_THLQSOL-&amp;gt; check if RUNCLASS36_flgs or svs_mesh process is active:&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 9px; background-color: initial;&quot;&gt;Assign appropriate tile based variables with&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 9px; background-color: initial;&quot;&gt;ffield values&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="60.46999999999999" y="112.12572506739431" width="229.52999999999997" height="65.40667295598001" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-32" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;if tfield == QI1 or QO1 or&amp;nbsp;STOR or LZS&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Assign appropriate grid based variables with&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ffield values&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="55.23000000000002" y="186.87620844565717" width="239.99999999999997" height="56.06286253369716" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-33" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;lt;conditional block&amp;gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry y="74.74914854820254" width="119.99999999999999" height="22.026030825441353" as="geometry" />
+        </mxCell>
+        <mxCell id="otaNcxHZhdEC-y1iKJni-34" value="do l = 1, nattr (# of header attributes)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="otaNcxHZhdEC-y1iKJni-25">
+          <mxGeometry x="8.889999999999993" y="-29.02949775379716" width="211.1086444616576" height="14.770948430714068" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
