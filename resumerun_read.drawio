@@ -1,0 +1,253 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.3">
+  <diagram name="Page-1" id="HpfYL4KAwdnJSC-sTgEP">
+    <mxGraphModel dx="2516" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-1" value="resumerun_read.f90" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" parent="1" vertex="1">
+          <mxGeometry x="444.92999999999995" y="20" width="157" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;LSS_Model\CLASS\3.6\sa_mesh_process\read_init_prog_variables_class.f90: read_init_prog_variables_class&lt;/div&gt;&lt;div style=&quot;&quot;&gt;LSS_Model\CLASS\3.6\sa_mesh_process\RUNCLASS36_config.f90: read_init_prog_variables_class&lt;/div&gt;&lt;div style=&quot;&quot;&gt;LSS_Model\SVS\svs1\src\runsvs_mesh.F90: runsvs_mesh_resume_states_seq&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Routing_Model\baseflow_module\baseflow_module.f90: bflm_resume_read&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Routing_Model\WatRoute_old\WF_ROUTE_config.f90: WF_ROUTE_resume_read&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Routing_Model\RPN_watroute\sa_mesh_process\rte_module.f90: run_rte_resume_read&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\save_basin_output.f90: run_save_basin_output_resume_read&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Modules\simulation_statistics\SIMSTATS.F90: stats_state_resume&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Routing_Model\WatRoute_old\WF_ROUTE_config.f90: WF_ROUTE_resume_read_nots&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Routing_Model\RPN_watroute\sa_mesh_process\rte_module.f90: run_rte_resume_read_nots&lt;/div&gt;&lt;div style=&quot;&quot;&gt;LSS_Model\CLASS\3.6\sa_mesh_process\RUNCLASS36_config.f90: read_init_prog_variables_class_row&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\sa_mesh_run_within_tile.f90: run_within_tile_stas_update&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\sa_mesh_run_within_grid.f90: run_within_grid_stas_update&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\sa_mesh_run_between_grid.f90: run_within_grid_stas_basin_update&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Driver\MESH_Driver\read_initial_values_nc.f90: read_initial_states_nc&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry width="420" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-3" target="4A6c9v3RaQ-BC8OZOFRq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-3" value="resumerun_read(fls, shd, cm)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="35.98999999999998" y="260" width="191.49" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-4" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call reset_tab&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="69.59999999999998" y="320" width="124.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-6" target="4A6c9v3RaQ-BC8OZOFRq-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-42.92000000000001" y="390" width="345.4" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-7" value="do k = 1, shd%lc%NML(GRUs)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-42.920000000000066" y="391" width="172.29" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-8" target="4A6c9v3RaQ-BC8OZOFRq-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-8" target="4A6c9v3RaQ-BC8OZOFRq-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-8" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If&amp;nbsp;RUNCLASS36_flgs ||&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;svs_mesh process is active&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="-30.630000000000045" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-10" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Update set of&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;vs%tile&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;variables at k with &lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;vs%gru&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;variables&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="160.34999999999997" y="435" width="136.73" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-13" target="4A6c9v3RaQ-BC8OZOFRq-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-13" value="&lt;font size=&quot;1&quot;&gt;if (RUNCLASS36_flgs% PROCESS_ACTIVE)&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="-30.630000000000045" y="530" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-14" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Update a set of&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;vs%tile%*&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;variables at k with &lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;vs%gru&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;variables&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="152.47999999999996" y="530" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-19" target="4A6c9v3RaQ-BC8OZOFRq-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-61" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-19" target="4A6c9v3RaQ-BC8OZOFRq-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-19" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If&amp;nbsp;RUNCLASS36_flgs ||&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;svs_mesh process is active&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="42.47999999999998" y="670" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="4A6c9v3RaQ-BC8OZOFRq-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="350" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-22" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;if ignd (last configured soild layer) &amp;gt; 0:&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Assign the same state variables from layer ignd to all deeper soil layers.&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="360.0000000000001" y="550" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-24" target="4A6c9v3RaQ-BC8OZOFRq-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-24" value="&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;if (.not. vs%flgs%resume%state == FLAG_OFF)&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="17.479999999999958" y="783.13" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-56" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="302.48" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-22" value="Binary" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4A6c9v3RaQ-BC8OZOFRq-56" vertex="1" connectable="0">
+          <mxGeometry x="-0.2673" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-59" target="4A6c9v3RaQ-BC8OZOFRq-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-59" value="&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;!&amp;gt; Update derived values.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp; &amp;nbsp; call run_within_tile_stas_update(fls, shd, cm)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp; &amp;nbsp; call run_within_grid_stas_update(fls, shd, cm)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp; &amp;nbsp; call run_within_grid_stas_basin_update(fls, shd, cm)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#CCFFCC;" parent="1" vertex="1">
+          <mxGeometry x="-16" y="910" width="276.96" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-63" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="65.91999999999992" y="1030.01" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.207;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4A6c9v3RaQ-BC8OZOFRq-24" target="ouQ78z2vMTuh8xTqLAgY-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-21" value="NetCDF" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ouQ78z2vMTuh8xTqLAgY-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.2352" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-23" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="302.4800000000001" y="640" width="563.04" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-26" value="&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry width="563.04" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-27" value="If Sequential Binary format:&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="27.5" y="20" width="172.29" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-28" target="4A6c9v3RaQ-BC8OZOFRq-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-40" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;" parent="4A6c9v3RaQ-BC8OZOFRq-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.1855" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-28" target="4A6c9v3RaQ-BC8OZOFRq-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-28" value="if auto-resume" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="35.370000000000005" y="50" width="119.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-29" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Modifiy the resume filename (fname) to include the simulation start date&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="236.92999999999995" y="5" width="126.11" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-31" target="4A6c9v3RaQ-BC8OZOFRq-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-39" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;" parent="4A6c9v3RaQ-BC8OZOFRq-34" vertex="1" connectable="0">
+          <mxGeometry x="-0.4004" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-31" target="4A6c9v3RaQ-BC8OZOFRq-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-31" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;If +STASONLY and +CLASSPROG flags not in&amp;nbsp;vs%flgs%resume%bin&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry y="110" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-36" target="ouQ78z2vMTuh8xTqLAgY-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.68;entryY=0.15;entryDx=0;entryDy=0;entryPerimeter=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" edge="1" target="ouQ78z2vMTuh8xTqLAgY-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="498.47000000000025" y="162.0999999999999" as="sourcePoint" />
+            <mxPoint x="319.02" y="402.01" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="533" y="162" />
+              <mxPoint x="533" y="410" />
+              <mxPoint x="319" y="410" />
+              <mxPoint x="319" y="430" />
+              <mxPoint x="309" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-33" value="&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;if (svs_mesh%PROCESS_ACTIVE .or. RUNCLASS36_flgs%PROCESS_ACTIVE):&lt;/span&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400; background-color: initial;&quot;&gt;call read_init_prog_variables_class(fls, shd)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400; background-color: initial;&quot;&gt;call runsvs_mesh_resume_states_seq(fls, shd, resume_ts = .true.)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400; background-color: initial;&quot;&gt;call bflm_resume_read(fls, shd)&lt;/span&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;if (WF_RTE_flgs%PROCESS_ACTIVE .or. rteflg%PROCESS_ACTIVE):&lt;/span&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call WF_ROUTE_resume_read(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call run_rte_resume_read(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call run_save_basin_output_resume_read(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&amp;nbsp; &amp;nbsp;call stats_state_resume(fls)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;align=left;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="221.17000000000002" y="60" width="284.6" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-35" target="4A6c9v3RaQ-BC8OZOFRq-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-41" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;" parent="4A6c9v3RaQ-BC8OZOFRq-37" vertex="1" connectable="0">
+          <mxGeometry x="-0.712" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-35" target="4A6c9v3RaQ-BC8OZOFRq-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-35" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Else If +CLASSPROG flags not in&amp;nbsp;vs%flgs%resume%bin&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry y="250" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-36" value="&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;if (svs_mesh%PROCESS_ACTIVE .or. RUNCLASS36_flgs%PROCESS_ACTIVE):&lt;/span&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call read_init_prog_variables_class(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call runsvs_mesh_resume_states_seq(fls, shd, resume_ts = .false.)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call bflm_resume_read(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;if (WF_RTE_flgs%PROCESS_ACTIVE .or. rteflg%PROCESS_ACTIVE):&lt;/span&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call WF_ROUTE_resume_read_nots(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call run_rte_resume_read_nots(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;align=left;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="228.47" y="245" width="281.53" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-43" value="&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call read_init_prog_variables_class_row(fls, shd)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call runsvs_mesh_resume_states_seq(fls, shd, resume_ts = .false.)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;align=left;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="206.51999999999995" y="505" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-44" target="4A6c9v3RaQ-BC8OZOFRq-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="155" y="490" />
+              <mxPoint x="346" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="4A6c9v3RaQ-BC8OZOFRq-44" target="4A6c9v3RaQ-BC8OZOFRq-52" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95.33000000000004" y="515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-44" value="Else" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="35.370000000000005" y="465" width="119.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4A6c9v3RaQ-BC8OZOFRq-52" value="&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Restore Filename After Auto-Resume&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;align=left;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="27.500000000000057" y="540" width="171.56" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" source="ouQ78z2vMTuh8xTqLAgY-1" target="ouQ78z2vMTuh8xTqLAgY-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;if (RESERVOIRFLAG == 2)&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="206.51999999999998" y="440" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-2" value="&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;1. Open file &#39;zone_storage_states*.txt&#39; based on Resume state&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;2.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;Reads reservoir data from the file: initial storage state in&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;stoSIM(1)&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;&amp;nbsp;&amp;nbsp;and initial flow state&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;flowSIM(1)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;align=left;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-23" vertex="1">
+          <mxGeometry x="387.52" y="423.7500000000001" width="170" height="71.25" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-24" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="322.48" y="1250" width="360" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-6" value="&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry width="360" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-7" value="If NetCDF format:&lt;div&gt;fname = &#39;MESH_initial_values.nc&#39;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry x="20.25" y="20" width="200.7" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" source="ouQ78z2vMTuh8xTqLAgY-10" target="ouQ78z2vMTuh8xTqLAgY-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-10" value="if auto-resume" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry x="7.690000000000055" y="80" width="119.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" source="ouQ78z2vMTuh8xTqLAgY-10" target="ouQ78z2vMTuh8xTqLAgY-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-12" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;" parent="ouQ78z2vMTuh8xTqLAgY-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.1855" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-13" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Modifiy the resume filename (fname) to include the simulation start date&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry x="190" y="70" width="126.11" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" source="ouQ78z2vMTuh8xTqLAgY-14" target="ouQ78z2vMTuh8xTqLAgY-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-14" value="&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;call read_initial_states_nc(fls, shd, trim(fname), ierr)&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;container=0;fillColor=#CCFFCC;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry x="7.690000000000055" y="150" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" source="ouQ78z2vMTuh8xTqLAgY-16" target="ouQ78z2vMTuh8xTqLAgY-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-16" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;if (RESERVOIRFLAG == 2)&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#F19C99;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry x="6.960000000000036" y="215.62000000000012" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ouQ78z2vMTuh8xTqLAgY-17" value="&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;1. Open file &#39;zone_storage_states*.txt&#39; based on Resume state&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;2.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;Reads reservoir data from the file: initial storage state in&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;stoSIM(1)&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;&amp;nbsp;&amp;nbsp;and initial flow state&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px; font-weight: 400;&quot;&gt;flowSIM(1)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;align=left;container=0;" parent="ouQ78z2vMTuh8xTqLAgY-24" vertex="1">
+          <mxGeometry x="180" y="200" width="170" height="71.25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

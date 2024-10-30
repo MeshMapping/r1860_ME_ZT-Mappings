@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.3">
+  <diagram name="Page-1" id="Ui4PeoH2Wmz7LBSDCM6p">
+    <mxGraphModel dx="1666" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-1" value="module_dates.f90" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" parent="1" vertex="1">
+          <mxGeometry x="363" y="20" width="147" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font size=&quot;1&quot;&gt;Driver\MESH_Driver\module_dates.f90: counter_increment&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="10" y="10" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-3" target="9YlWsWyU1VqXCOaVPdyr-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-3" value="counter_update()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="130" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-4" target="9YlWsWyU1VqXCOaVPdyr-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-4" value="Store the Old Time Values:&amp;nbsp;&lt;div&gt;&lt;b&gt;old_year, old_jday, old_month, old_day, old_hour, old_mins&lt;/b&gt;&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="180" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-6" target="9YlWsWyU1VqXCOaVPdyr-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-6" value="&lt;div&gt;!&amp;gt;&amp;nbsp;Increment the current simulation&amp;nbsp; time-step and update the date (YEAR/JDAY/HOUR/MINS)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;call counter_increment(ic%now)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" parent="1" vertex="1">
+          <mxGeometry x="143.13" y="270" width="193.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-8" target="9YlWsWyU1VqXCOaVPdyr-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-8" value="&lt;div&gt;For Year, Day, Month, Hourly, and Minutes&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If it changes from old time values&lt;/div&gt;&lt;div&gt;if (old_year /= ic%now%year):&lt;/div&gt;&lt;div&gt;&amp;nbsp;iteration counter is incremented for that time value, and the time step counter is reset&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="121.56" y="360" width="236.88" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-10" target="9YlWsWyU1VqXCOaVPdyr-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-10" value="&lt;div&gt;Times step counters:&amp;nbsp;&lt;/div&gt;&lt;div&gt;ts_yearly,&amp;nbsp;ts_monthly,&amp;nbsp;ts_daily,&amp;nbsp;&lt;/div&gt;&lt;div&gt;ts_hourly,&amp;nbsp;ts_halfhourly,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ts_count&amp;nbsp;&lt;/span&gt;&lt;/div&gt;Each time step counter is incremented by 1" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="119.69999999999999" y="500" width="238.74" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-12" target="9YlWsWyU1VqXCOaVPdyr-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-12" value="Set the &#39;next&#39; counter to &#39;now&#39;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="154.39" y="610" width="169.37" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9YlWsWyU1VqXCOaVPdyr-14" target="9YlWsWyU1VqXCOaVPdyr-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-14" value="&lt;div&gt;!&amp;gt; Increment the &#39;next&#39; counter.&lt;/div&gt;&lt;div&gt;call counter_increment(ic%next)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#CCFFCC;" parent="1" vertex="1">
+          <mxGeometry x="141.26999999999998" y="670" width="195.61" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9YlWsWyU1VqXCOaVPdyr-16" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="179.2000000000001" y="730" width="119.75" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

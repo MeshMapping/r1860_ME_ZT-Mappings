@@ -1,0 +1,331 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.3">
+  <diagram name="Page-1" id="jweimoSPKfAo6tUn9AmL">
+    <mxGraphModel dx="1666" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-1" value="SIMSTATS.f90" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" parent="1" vertex="1">
+          <mxGeometry x="377" width="157" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dependencies:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;Modules\simulation_statistics\SIMSTATS_config.f90: init_metricsout_files&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Modules\simulation_statistics\SIMSTATS.F90: calc_stats&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry y="10" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-3" target="zN9mEQPc6Sny1_eNRjfh-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-3" value="stats_write(fls)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="86.41000000000003" y="870" width="191.49" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-4" target="zN9mEQPc6Sny1_eNRjfh-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-4" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;if not the head node of if AUTOCALIBRATIONFLAG is not active, or the number of calibration points is zero&lt;/font&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="80.02000000000004" y="930" width="204.26" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-6" value="Abort Function" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="326.41" y="965" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-8" target="zN9mEQPc6Sny1_eNRjfh-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-8" target="zN9mEQPc6Sny1_eNRjfh-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-8" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;if (.not. allocated(mtsfl%fl))&lt;/font&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="92.15000000000003" y="1060" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-4" target="zN9mEQPc6Sny1_eNRjfh-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-10" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;call init_metricsout_files()&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFE599;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="306.41" y="1080" width="153.79" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-12" target="zN9mEQPc6Sny1_eNRjfh-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-12" target="zN9mEQPc6Sny1_eNRjfh-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-12" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;If pre-emption is active&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="92.15000000000003" y="1170" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-13" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Write intermediate metrics into file name from mtsfl%fl(mtsk%fo)%fn&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="298.31" y="1170" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-16" target="zN9mEQPc6Sny1_eNRjfh-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-16" target="zN9mEQPc6Sny1_eNRjfh-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-16" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;if (METRICSSPINUP &amp;gt; ncal)&amp;nbsp;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="92.16000000000003" y="1270" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-18" value="Abort Function" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="306.41" y="1290" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-22" target="zN9mEQPc6Sny1_eNRjfh-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zN9mEQPc6Sny1_eNRjfh-22" target="F3JlqdRcwHK4D48mlGWm-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="1410" />
+              <mxPoint x="480" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-22" value="&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;call calc_stats&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;- Allocates the &lt;/span&gt;fkge &lt;span style=&quot;font-weight: 400;&quot;&gt;array to store&amp;nbsp; &amp;nbsp; &amp;nbsp; Kling-Gupta Efficiency (KGE)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; values for each calibration point&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFE599;rounded=1;fontStyle=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="87.16000000000003" y="1370" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-24" target="zN9mEQPc6Sny1_eNRjfh-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="182.41000000000003" y="1560" />
+              <mxPoint x="182.41000000000003" y="1560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-24" value="&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;st_drms = calc_drms_value(METRICSSPINUP, ncal, qobs, qsim)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;st_abserr = calc_abserr_value(METRICSSPINUP, ncal, qobs, qsim)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1" y="1480" width="362.3" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-27" target="zN9mEQPc6Sny1_eNRjfh-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-27" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Monte Carlo Analysis:&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Appends multiple simulations&#39; results into a file.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;Outputs summary files containing:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Bias, NSE, MAE, RMSE, KGE, and other metrics.&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="74.40000000000003" y="1560" width="232.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-29" target="zN9mEQPc6Sny1_eNRjfh-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-29" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Write Nash-Sutcliffe coefficient of daily streamflow values&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="74.40000000000003" y="1660" width="232.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-31" target="zN9mEQPc6Sny1_eNRjfh-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-31" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Write Nash-Sutcliffe coefficient of weekly streamflow values&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="74.40000000000003" y="1740" width="232.01" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-33" target="zN9mEQPc6Sny1_eNRjfh-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-33" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Write daily root mean squared error&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="84.40000000000003" y="1810" width="212.01" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-34" target="zN9mEQPc6Sny1_eNRjfh-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-34" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Write mean absolute error&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="110.41000000000003" y="1880" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zN9mEQPc6Sny1_eNRjfh-37" target="zN9mEQPc6Sny1_eNRjfh-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-37" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Write the summary of the metrics to file&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="110.40000000000003" y="1950" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zN9mEQPc6Sny1_eNRjfh-39" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="133.82999999999998" y="2020" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="F3JlqdRcwHK4D48mlGWm-1" target="F3JlqdRcwHK4D48mlGWm-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-1" value="calc_stats(obs, sim, n, bias, nsd, lnsd, nsw, tpd)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="494.25" y="870" width="191.49" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-2" target="F3JlqdRcwHK4D48mlGWm-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="F3JlqdRcwHK4D48mlGWm-2" target="F3JlqdRcwHK4D48mlGWm-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-2" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;!&amp;gt; If spin-up period enabled by&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;METRICSINCLUDESPINUP&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="488.25" y="930" width="204.26" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-3" value="ilf &lt;span style=&quot;font-weight: normal;&quot;&gt;variable defines where the analysis starts&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="724.2499999999999" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="F3JlqdRcwHK4D48mlGWm-6" target="F3JlqdRcwHK4D48mlGWm-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-6" target="F3JlqdRcwHK4D48mlGWm-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-6" value="&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;!&amp;gt; If spin-up period is longer than dataset&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;if (METRICSSPINUP &amp;gt; ncal)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="488.25" y="1060" width="204.26" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-7" value="Abort Function" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="744.2499999999999" y="1095" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-12" target="F3JlqdRcwHK4D48mlGWm-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-12" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Calculate the weekly values for daily observed and simulated values&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="512.48" y="1190" width="155.8" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-14" target="F3JlqdRcwHK4D48mlGWm-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-14" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Compute the mean of daily and weekly observed values (ignoring negative values)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="517.87" y="1280" width="144.26" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="F3JlqdRcwHK4D48mlGWm-16" target="F3JlqdRcwHK4D48mlGWm-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-16" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;For each day and week, compute errors between observed and simulated values. For each day, calculate logarithmic errors&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="511.9" y="1380" width="156.38" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-18" target="F3JlqdRcwHK4D48mlGWm-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-18" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Compute Statistical Coefficients&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;1.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;Bias: Average error normalized by the mean of observed values&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;2.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;Nash-Sutcliffe Efficiency (NS): How well the simulated values predict the observed ones(daily and weekly)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;3.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;Log-NS: NS, but on the log-transformed data&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="484.11" y="1490" width="211.77" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-20" target="F3JlqdRcwHK4D48mlGWm-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-20" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Calculate Time-to-Peak daily and weekly (TPD and TPW)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="512.48" y="1660" width="153.87" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-22" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="532.85" y="1770" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-24" target="F3JlqdRcwHK4D48mlGWm-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-24" value="stats_update_stfl_daily(fls)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="444.25" y="110" width="191.49" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="F3JlqdRcwHK4D48mlGWm-25" target="F3JlqdRcwHK4D48mlGWm-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-25" target="F3JlqdRcwHK4D48mlGWm-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-25" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;If not Head Node and&amp;nbsp;AUTOCALIBRATIONFLAG not active&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="448.14" y="170" width="183.7" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-27" value="Abort Function" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="649.25" y="200" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-30" target="F3JlqdRcwHK4D48mlGWm-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-30" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Increment the Simulation Day Counter&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="475.36" y="290" width="129.26" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-32" target="F3JlqdRcwHK4D48mlGWm-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-32" target="F3JlqdRcwHK4D48mlGWm-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-35" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Expand arrays qobs and qsim (simulated values)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="670.63" y="377.5" width="128.13" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-37" target="F3JlqdRcwHK4D48mlGWm-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-37" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Copy measured and simulated values to local arrays qobs and qsim&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="438.14" y="490" width="203.7" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-39" target="F3JlqdRcwHK4D48mlGWm-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="F3JlqdRcwHK4D48mlGWm-39" target="F3JlqdRcwHK4D48mlGWm-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-39" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;if (mtsflg%PREEMPTIONFLAG == 1)&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="430" y="570" width="219.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-40" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;strong style=&quot;background-color: initial;&quot;&gt;&lt;code style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;OBJFNFLAG == 0&lt;/font&gt;&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 11px; background-color: initial;&quot;&gt;: &lt;span style=&quot;font-weight: normal;&quot;&gt;Use the &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: initial; font-weight: normal;&quot;&gt;Sum of Absolute Errors (SAE)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;OBJFNFLAG == 1: &lt;span style=&quot;font-weight: normal;&quot;&gt;Use a sorted version of SAE (SAESRT)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;OBJFNFLAG == 2:&lt;span style=&quot;font-weight: 400;&quot;&gt; Print a warning that SAEMSRT is not supported&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;OBJFNFLAG == 3:&lt;span style=&quot;font-weight: 400;&quot;&gt; Print an error if Nash-Sutcliffe Efficiency (NSE) is used with pre-emption and abort the program&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;OBJFNFLAG == 4:&lt;span style=&quot;font-weight: 400;&quot;&gt; Use negative NSE to penalize poor performance&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="659.25" y="465" width="180" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-43" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="483.45000000000005" y="660" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-45" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="445.55" y="360" width="188.88000000000005" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-32" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;If the current number of simulated days exceeds the size of the qobs (observed values) array&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" parent="F3JlqdRcwHK4D48mlGWm-45" vertex="1">
+          <mxGeometry width="188.88" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F3JlqdRcwHK4D48mlGWm-34" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;if (ncal &amp;gt; size(qobs, 1))&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" parent="F3JlqdRcwHK4D48mlGWm-45" vertex="1">
+          <mxGeometry x="16.96999999999997" y="55" width="155" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-1" target="FOQCMvYCIj2bMMxN47Gb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-1" value="stats_init(fls)" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="51.15000000000002" y="110" width="191.49" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-2" target="FOQCMvYCIj2bMMxN47Gb-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-2" target="FOQCMvYCIj2bMMxN47Gb-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-2" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;If no stations are defined (fms%stmg%n)&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="60.34" y="170" width="173.1" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-4" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Autocalibration flag set to 0&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="255.41000000000003" y="180" width="114.59" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-6" target="FOQCMvYCIj2bMMxN47Gb-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-6" target="FOQCMvYCIj2bMMxN47Gb-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-6" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;If process is not the head node&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;amp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;Autocalibration is not active&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="40.400000000000006" y="276" width="213.84" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-8" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Return&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="278.54" y="308.5" width="84.59" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-11" target="FOQCMvYCIj2bMMxN47Gb-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-11" target="FOQCMvYCIj2bMMxN47Gb-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-11" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;If pre-emption mode is active&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="43.11" y="390.25" width="208.43" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-13" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Print message to indicate SA_MESH is running in&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;AUTOCALIBRATION mode using Pre-emption&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="269.40000000000003" y="379.5" width="151.46" height="76.5" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-15" target="FOQCMvYCIj2bMMxN47Gb-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-15" target="FOQCMvYCIj2bMMxN47Gb-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-15" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;If pre-emption is enabled&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="42.66999999999999" y="480" width="208.43" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-17" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Open file and read the best calibration value and store into (&lt;/span&gt;fbest&lt;span style=&quot;font-weight: normal;&quot;&gt;)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="272.04999999999995" y="476.25" width="136.72" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-19" target="FOQCMvYCIj2bMMxN47Gb-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-19" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Initialize Counters&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;-&amp;nbsp; ncal=0(number of calibration days)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;- ns=&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;fms%stmg%n (number of stations used in simulation)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="44.55" y="560" width="204.68" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-21" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Allocate Memory and initialize to 0&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;-&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;qobs (observed data)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;- qsim (simulated data)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: 400;&quot;&gt;bias, nsd, lnsd, nsw, tpd, tpw: Arrays to track different statistical metrics&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="45.65" y="650" width="203.58" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-23" value="end subroutine" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="90.32" y="770" width="113.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FOQCMvYCIj2bMMxN47Gb-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FOQCMvYCIj2bMMxN47Gb-21" target="FOQCMvYCIj2bMMxN47Gb-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
